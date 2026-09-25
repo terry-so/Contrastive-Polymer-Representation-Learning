@@ -5,17 +5,16 @@ import torch
 from torch.utils.data import DataLoader
 from transformers import AutoTokenizer
 
-from augmentations import APPROACHES, make_contrastive_views
-from dataloader import SmilesDataset
-from loss import nt_xent_loss
-from model import PolyCLModel
+from src.augmentations import APPROACHES, make_contrastive_views
+from src.dataloader import SmilesDataset
+from src.loss import nt_xent_loss
+from src.model import PolyCLModel
 
 
-ROOT = Path(__file__).resolve().parent
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 MODEL_NAME = "HAYDERphd/polyBERT"
-CSV_PATH = ROOT / "data" / "train.csv"
+CSV_PATH = r"data\train.csv"
 SMILES_COL = "repeat_unit_smiles"
 
 BATCH_SIZE = 16

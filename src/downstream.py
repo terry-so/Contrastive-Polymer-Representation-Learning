@@ -3,7 +3,7 @@ from pathlib import Path
 import torch
 import torch.nn as nn
 
-from model import PolyCLModel
+from src.model import PolyCLModel
 
 
 class TgRegressor(nn.Module):
