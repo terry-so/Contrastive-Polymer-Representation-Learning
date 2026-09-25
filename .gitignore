@@ -17,12 +17,6 @@ ENV/
 # Jupyter
 .ipynb_checkpoints/
 
-# Model checkpoints / trained weights
-checkpoints/
-*.pt
-*.pth
-*.ckpt
-
 # Training outputs
 runs/
 logs/
