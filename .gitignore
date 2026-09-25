@@ -1,0 +1,55 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model checkpoints / trained weights
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Dataset / generated data
+data/
+
+# Training outputs
+runs/
+logs/
+outputs/
+wandb/
+
+# Coverage / test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Type checker / linter cache
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+*.swp
