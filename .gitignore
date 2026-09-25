@@ -23,9 +23,6 @@ checkpoints/
 *.pth
 *.ckpt
 
-# Dataset / generated data
-data/
-
 # Training outputs
 runs/
 logs/
