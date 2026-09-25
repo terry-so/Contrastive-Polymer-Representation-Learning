@@ -7,9 +7,9 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader, random_split
 from transformers import AutoTokenizer
 
-from dataloader import TgDataset
-from downstream import TgRegressor
-from pretrain import CSV_PATH, DEVICE, MAX_LENGTH, MODEL_NAME
+from src.dataloader import TgDataset
+from src.downstream import TgRegressor
+from src.pretrain import CSV_PATH, DEVICE, MAX_LENGTH, MODEL_NAME
 
 
 BATCH_SIZE = 32
